@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeirani</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="game-viewport">
+        <div class="game-area">
+            <h1 id="round-indicator">Round 1</h1>
+            <div class="scores">
+                <div class="player-area">
+                    <h2>You</h2>
+                    <h1 class="score" id="player-score">0</h1>
+                </div>
+                <div class="player-area">
+                    <h2>Computer</h2>
+                    <h1 class="score" id="computer-score">0</h1>
+                </div>
+            </div>
+            <div class="game-choices">
+                <h3 id="player-choice"></h3>
+                <div class="selectdiv">
+                    <label for="mySelect"></label>
+                        <select id="mySelect">
+                            <option selected> Select Your Weapon </option>
+                            <option value="rock">Rock</option>
+                            <option value="paper">Paper</option>
+                            <option value="scissors">Scissors</option>
+                        </select>
+                    </label>
+                  </div>
+                  <h3 id="computer-choice"></h3>
+            </div>
+              <button id="fight">Fight</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
